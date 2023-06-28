@@ -30,7 +30,22 @@ _Proofs where oscillating between counterexamples, lemmas, and the proof is genu
 
 *Details* are in [the full pdf][4].
 
+# The Complement
+
+_Proofs where disproving counterexamples is not helpful in proof discovery._
+
+### Cars on a racetrack
+
+*High-level:* There are lots of *stronger (false)* conjectures to be made here, e.g.:
+- Any car that can make it to the next car can make it all the way around the track.
+- It’s always the car that has the most gas that works.
+- It’s always the car closest to the next car that works.
+But I don’t think that disproving any of these conjectures help aid proof discovery.  So, these are some examples where there is not much to learn from failure (disproving a false, stronger statement).
+
+*Details* are in [the full pdf][5].
+
 [1]:	no-odd-cycle-bipartite.pdf
 [2]:	bipartition-points-on-plane.pdf
 [3]:	no-cut-vertex-every-two-on-cycle.pdf
 [4]:	tree-implies-n-1.pdf
+[5]:	../forward-from-target/n-cars.pdf
