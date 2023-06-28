@@ -1,6 +1,6 @@
-# Conflict-Driven Proofs
+# Oscillation
 
-_Proofs where oscillating between counterexamples, lemmas, and the proof is genuinely helpful._
+_Proofs where oscillating between counterexamples, lemmas-learnt-from-failure, and the proof is genuinely helpful. ”_
 
 ### A graph with no odd cycles is bipartite.
 
