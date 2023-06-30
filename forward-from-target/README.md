@@ -5,10 +5,11 @@ _Proofs where forward-reasoning from the target helps proof discovery._
 ### In any n-vertex graph where each vertex’s degree is at least n/2, there exists a Hamiltonian cycle.
 
 *High-level:* 
-- As it turns out, the prevailing way to do it (i.e. the way Tim learned it in school, and the way it seems textbooks prove it), involves breaking it up into
-	- 1) Proving there exists a Hamiltonian path.
-	- 2) Proving the first and last vertices of that path are neighbours.
-- That is, when someone solves it, they have to forward-reason from the target and say “well, if there’s a Hamiltonian cycle, then there’s definitely a Hamiltonian path.”
+- When you solve it, you can forward-reason from the target and say “well, if there’s a Hamiltonian cycle, then there’s definitely a Hamiltonian path.”
+- As it turns out, the prevailing way to do it (i.e. the way Tim learned it in school, and the way it seems textbooks prove it), involves breaking it up into:
+	- Proving there exists a Hamiltonian path (as mentioned before, achieved by forward reasoning).
+	- Proving each end-vertex on the path has an edge that connects it with two particular vertices along the path.
+	- Proving the Hamiltonian path plus those two new edges can be used to construct a Hamiltonian cycle.
 
 *Details* TBD.
 
@@ -39,5 +40,12 @@ There are n cars on a circular track.  Adding up the gas in their tanks, there�
 
 *Details* are in [the full pdf][2].
 
+
+### The four digit number n (written like aabb) is a square.  Find n.
+*High-level:* To solve it, Tim reasoned forward from the target and noted that  n = 11(100a+b).  Since it’s a square, and there’s one factor of 11, there must be another factor of 11, so 100a+b is also a multiple of 11.  He continued reasoning forward from the target like this until identifying “n.”
+
+*Details* are in [the full pdf][3].
+
 [1]:	n-cars.pdf
 [2]:	non-abelian-groups.pdf
+[3]:	aabb.pdf
