@@ -30,6 +30,15 @@ _Proofs where oscillating between counterexamples, lemmas-learnt-from-failure, a
 
 *Details* are in [the full pdf][4].
 
+### Semigroup where BBBC = BBCB
+
+*High-level:* There are lots of mistakes and mistake-inspired-lemmas that can be encountered while working through this problem, e.g.:
+- Multiplying an equation by B too many times, and realizing I couldn’t get to a target with less Bs, made me realize that there was no rule to destroy Bs (you could only add them).
+- Trying to move a “C” to the front of a term and failing made me realize there was no way to bring a “C” to the front if there is an “A” anywhere before it.
+- Not being able to move a “C” to the front of the term, when that was my goal, made me realize that actually I needed to modify my goal to a stronger one where the “C” was destroyed entirely.
+
+*Details* are in [the full pdf][5].
+
 # The Complement
 
 _Proofs where disproving counterexamples is not helpful in proof discovery._
@@ -42,10 +51,14 @@ _Proofs where disproving counterexamples is not helpful in proof discovery._
 - It’s always the car closest to the next car that works.
 But I don’t think that disproving any of these conjectures help aid proof discovery.  So, these are some examples where there is not much to learn from failure (disproving a false, stronger statement).
 
-*Details* are in [the full pdf][5].
+*Details* are in [the full pdf][6].
+
+
+
 
 [1]:	no-odd-cycle-bipartite.pdf
 [2]:	bipartition-points-on-plane.pdf
 [3]:	no-cut-vertex-every-two-on-cycle.pdf
 [4]:	tree-implies-n-1.pdf
-[5]:	../forward-from-target/n-cars.pdf
+[5]:	semigroup-bbbc.pdf
+[6]:	../forward-from-target/n-cars.pdf
