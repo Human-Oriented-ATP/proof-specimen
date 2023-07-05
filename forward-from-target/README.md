@@ -46,6 +46,12 @@ There are n cars on a circular track.  Adding up the gas in their tanks, thereâ€
 
 *Details* are in [the full pdf][3].
 
+### Start with four integers (a,b,c,d), where not all four integers are equal, and repeatedly replace it with (a-b,b-c,c-d,d-a).  Show one term in the quadruple will diverge to infinity.
+*High-level:*  Fredy noticed that we can solve this problem by reasoning forward from the target to a weaker statement.  We want to show one of the terms does go to infinity.  So  itâ€™s _necessary_ that a^2+b^2+c^2+d^2 gets arbitrarily large. When we prove that necessary statement, and combine it with the fact that a+b+c+d=0 for all but the first term, we have finished the proof.
+
+*Details* are in [the full pdf][4].
+
 [1]:	n-cars.pdf
 [2]:	non-abelian-groups.pdf
 [3]:	aabb.pdf
+[4]:	diverging-tuple.pdf
