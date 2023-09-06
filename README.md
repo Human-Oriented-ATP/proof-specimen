@@ -8,6 +8,7 @@ As we develop our algorithm, we can test it out on these proofs.
 
 Some proof techniques include:
 - *Conflict-driven*:  Proofs where oscillating between counterexamples, lemmas-learnt-from-failure, and the proof helps proof discovery.
+- *Backward-Reasoning from Hypothesis*: Proofs where backward-reasoning from the hypothesis (finding conditions that imply the hypothesis) helps proof discovery.
 - *Forward-Reasoning from Target*: Proofs where forward-reasoning from the target (finding necessary conditions) helps proof discovery.
 - *Generalization - Specialization*: Proofs where applying generalization & specialization helps proof discovery.
 - *Induction*: Proofs where applying mathematical induction (or, thought of slightly differently, an algorithm) genuinely helps progress the proof.
