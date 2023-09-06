@@ -1,4 +1,4 @@
-# Oscillation
+# Conflict-driven
 
 _Proofs where oscillating between counterexamples, lemmas-learnt-from-failure, and the proof is genuinely helpful. ”_
 
