@@ -15,7 +15,7 @@ _Proofs where forward-reasoning from the target helps proof discovery._
 
 ### Consider a commutative ring R. Prove that R/I is a field iff I is a maximal ideal.
 
-*High-level:* The key to one direction of the proof lies in constructing an ideal J such that I ⊊ J ⊊ R.  Forward-reasoning-from-target helps us slowly parameterize the set builder notation for J (the ideal in “between” the given ideal “I” and the full ideal “J”)…first noticing it’s _necessary_ to add in the elements of I…then noticing it’s _necessary_ that it contains one element that’s not in I…and then noticing it’s _necessary_ to apply closure.  By the time we’ve finished all that, we realize the ideal J we have constructed is _sufficient_ for our proof. 
+*High-level:* The key to one direction of the proof lies in constructing an ideal J such that I ⊊ J ⊊ R.  Forward-reasoning-from-target helps us slowly parameterize the set builder notation for J (the ideal in “between” the given ideal “I” and the full ring “R”)…first noticing it’s _necessary_ to add in the elements of I…then noticing it’s _necessary_ that it contains one element that’s not in I…and then noticing it’s _necessary_ to apply closure.  By the time we’ve finished all that, we realize the ideal J we have constructed is _sufficient_ for our proof. 
 
 *Details* are in the [pdf containing the proof][1], and the [pdf containing the analysis of conflict-driven reasoning][2].
 
