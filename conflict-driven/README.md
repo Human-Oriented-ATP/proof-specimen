@@ -72,7 +72,21 @@ But I don’t think that disproving any of these conjectures help aid proof disc
 *Details* are in [the full pdf][13].
 
 
+### Prove an r-regular and bipartite graph does not have a bridge
 
+*High-level:* I try to prove the stronger, false statement: that any regular graph does not have a bridge.  But, we find a counterexample, and find there are regular graphs with bridges.  And so now we’re driven to characterize such graphs, and we find all such graphs have a particular degree sequence, and that degree sequence is incompatible with bipartiteness.  And so, we end up proving the contrapositive: regular + bridge =\> not bipartite.
+
+*Details* are in [the full pdf][14].
+
+# The complement
+
+_Proofs where a conflict-inspired lemma is easily derived, but not helpful to proof discovery._
+
+### Prove an r-regular and bipartite graph does not have a bridge
+
+*High-level:* I tried going by contrapositive: regular + has bridge implies not bipartite.  In the process, I realized I ended up with a graph where I plugged in an even value for the “r” in the regular graph, and it *didn’t work*, so I realized from the conflict that *r is odd*.  But, this doesn’t end up being helpful in the final proof.
+
+*Details* are in [the full pdf][15].
 
 [1]:	bipartition-points-on-plane.pdf
 [2]:	dice-proof.pdf
@@ -87,3 +101,5 @@ But I don’t think that disproving any of these conjectures help aid proof disc
 [11]:	tree-implies-n-1.pdf
 [12]:	semigroup-bbbc.pdf
 [13]:	../forward-from-target/n-cars.pdf
+[14]:	regular-bipartite-bridge.pdf
+[15]:	regular-bipartite-bridge.pdf
