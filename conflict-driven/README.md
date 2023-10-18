@@ -57,9 +57,25 @@ _Proofs where oscillating between counterexamples, lemmas-learnt-from-failure, a
 
 *Details* are in [the full pdf][12].
 
+
+### Prove an r-regular and bipartite graph does not have a bridge
+
+*High-level:* I try to prove the stronger, false statement: that any regular graph does not have a bridge.  But, we find a counterexample, and find there are regular graphs with bridges.  And so now we’re driven to characterize such graphs, and we find all such graphs have a particular degree sequence, and that degree sequence is incompatible with bipartiteness.  And so, we end up proving the contrapositive: regular + bridge =\> not bipartite.
+
+*Details* are in [the full pdf][13].
+
+
+### Is there a graph with degree sequence 1,3,3,3?
+
+*High-level:* You can prove this doesn’t work either (1) by trying a forced construction of an example, failing to construct such an example, and generalizing the failure to the fact that there is a vertex of degree 1 and more than one vertex of maximal degree, or (2) Proving the stronger statement “there is no n-vertex graph with degree sequence 1, n-1, n-1….”.
+
+*Details* are in [the full pdf][14].
+
+
 # The Complement
 
-_Proofs where disproving counterexamples is not helpful in proof discovery._
+_Proofs where a conflict-inspired lemma is easily derived, but not helpful to proof discovery._
+
 
 ### Cars on a racetrack
 
@@ -69,29 +85,11 @@ _Proofs where disproving counterexamples is not helpful in proof discovery._
 - It’s always the car closest to the next car that works.
 But I don’t think that disproving any of these conjectures help aid proof discovery.  So, these are some examples where there is not much to learn from failure (disproving a false, stronger statement).
 
-*Details* are in [the full pdf][13].
-
-
-### Prove an r-regular and bipartite graph does not have a bridge
-
-*High-level:* I try to prove the stronger, false statement: that any regular graph does not have a bridge.  But, we find a counterexample, and find there are regular graphs with bridges.  And so now we’re driven to characterize such graphs, and we find all such graphs have a particular degree sequence, and that degree sequence is incompatible with bipartiteness.  And so, we end up proving the contrapositive: regular + bridge =\> not bipartite.
-
-*Details* are in [the full pdf][14].
-
-
-### Is there a graph with degree sequence 1,3,3,3?
-
-*High-level:* You can prove this doesn’t work either (1) by trying a forced construction of an example, failing to construct such an example, and generalizing the failure to the fact that there is a vertex of degree 1 and more than one vertex of maximal degree, or (2) Proving the stronger statement “there is no n-vertex graph with degree sequence 1, n-1, n-1….”.
-
 *Details* are in [the full pdf][15].
 
-# The complement
-
-_Proofs where a conflict-inspired lemma is easily derived, but not helpful to proof discovery._
-
 ### Prove an r-regular and bipartite graph does not have a bridge
 
-*High-level:* I tried going by contrapositive: regular + has bridge implies not bipartite.  In the process, I realized I ended up with a graph where I plugged in an even value for the “r” in the regular graph, and it *didn’t work*, so I realized from the conflict that *r is odd*.  But, this doesn’t end up being helpful in the final proof.
+*High-level:* I tried going by contrapositive: regular + has bridge implies not bipartite.  In the process, I realized I ended up with a graph where I plugged in an even value for the “r” in the regular graph with a bridge, and it *didn’t work*, so I realized from the conflict that *r is odd*.   It then immediately followed that in a n-vertex subgraph formed by taking the biggest connected component after removing the bridge, *n is even*.  But, neither of these facts end up being helpful in the final proof.
 
 *Details* are in [the full pdf][16].
 
@@ -107,7 +105,7 @@ _Proofs where a conflict-inspired lemma is easily derived, but not helpful to pr
 [10]:	no-cut-vertex-every-two-on-cycle.pdf
 [11]:	tree-implies-n-1.pdf
 [12]:	semigroup-bbbc.pdf
-[13]:	../forward-from-target/n-cars.pdf
-[14]:	regular-bipartite-bridge.pdf
-[15]:	degree-sequences.pdf
+[13]:	regular-bipartite-bridge.pdf
+[14]:	degree-sequences.pdf
+[15]:	../forward-from-target/n-cars.pdf
 [16]:	regular-bipartite-bridge.pdf
