@@ -37,7 +37,7 @@ _Proofs where oscillating between counterexamples, lemmas-learnt-from-failure, a
 
 ### On a connected graph (with at least 3 vertices) and no cut vertex, every two vertices are on a cycle.
 
-*High-level:* In trying to come up with counterexamples to the theorem, you come up with all sorts of genuinely helpful lemmas e.g. “two vertices are on a cycle iff there are two disjoint paths between them” and “for any two u-v paths in a graph with no cut vertex, there exists another path that avoids their first point of intersection.”
+*High-level:* In trying to come up with counterexamples to the theorem, you come up with all sorts of genuinely helpful lemmas e.g. “two vertices are on a cycle iff there are two disjoint paths between them” and “for any two u-v paths in a graph with no cut vertex, there exists another path that avoids their first point of intersection.”  There’s also one statement (“any two vertices u and v will have two disjoint paths between them“) that we strengthen into a stronger-but-false conjecture (“given one path between any two vertices u and v, there will be second path between them that is disjoint to first one”) that leads to a genuinely helpful meta-reasoning step (which is, as Tim mentioned, noticing that he needed to “slowly modify the given path”).
 
 *Details* are in [the full pdf][10].
 
