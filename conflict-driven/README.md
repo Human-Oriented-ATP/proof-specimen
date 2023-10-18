@@ -78,6 +78,13 @@ But I don’t think that disproving any of these conjectures help aid proof disc
 
 *Details* are in [the full pdf][14].
 
+
+### Is there a graph with degree sequence 1,3,3,3?
+
+*High-level:* You can prove this doesn’t work either (1) by trying a forced construction of an example, failing to construct such an example, and generalizing the failure to the fact that there is a vertex of degree 1 and more than one vertex of maximal degree, or (2) Proving the stronger statement “there is no n-vertex graph with degree sequence 1, n-1, n-1….”.
+
+*Details* are in [the full pdf][15].
+
 # The complement
 
 _Proofs where a conflict-inspired lemma is easily derived, but not helpful to proof discovery._
@@ -86,7 +93,7 @@ _Proofs where a conflict-inspired lemma is easily derived, but not helpful to pr
 
 *High-level:* I tried going by contrapositive: regular + has bridge implies not bipartite.  In the process, I realized I ended up with a graph where I plugged in an even value for the “r” in the regular graph, and it *didn’t work*, so I realized from the conflict that *r is odd*.  But, this doesn’t end up being helpful in the final proof.
 
-*Details* are in [the full pdf][15].
+*Details* are in [the full pdf][16].
 
 [1]:	bipartition-points-on-plane.pdf
 [2]:	dice-proof.pdf
@@ -102,4 +109,5 @@ _Proofs where a conflict-inspired lemma is easily derived, but not helpful to pr
 [12]:	semigroup-bbbc.pdf
 [13]:	../forward-from-target/n-cars.pdf
 [14]:	regular-bipartite-bridge.pdf
-[15]:	regular-bipartite-bridge.pdf
+[15]:	degree-sequences.pdf
+[16]:	regular-bipartite-bridge.pdf
