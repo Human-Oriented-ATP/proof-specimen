@@ -20,5 +20,12 @@ _Proofs where applying generalization & specialization is genuinely helpful._
 
 *Details* TBD.
 
+### Is there a solution to e^ (√ x) + e^(∛ x)=17?
+
+*High-level:* Tim mentioned it might be a problem that someone, coming straight out of high school, might struggle with. But it helps to weaken the hypothesis (and therefore *generalize* the statement) by turning the whole left hand side to a continuous function $f(x)$.  And then you can realize you can use intermediate value theorem to realize there must be a solution, since at some point the continuous function takes on a value less than 17, and at some point it takes on a value greater than 17.  That is, the information about “e” just distracts you, and it’s more helpful to generalize it away.
+
+*Details* are in [the full pdf][3].
+
 [1]:	https://arxiv.org/abs/math/9506215
 [2]:	../conflict-driven/tree-implies-n-1.pdf
+[3]:	exponential-equals-17.pdf
