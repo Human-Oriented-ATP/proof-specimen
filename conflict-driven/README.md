@@ -72,6 +72,17 @@ _Proofs where oscillating between counterexamples, lemmas-learnt-from-failure, a
 *Details* are in [the full pdf][14].
 
 
+### Either a graph or its complement is connected.
+
+*High-level:* We are trying to prove “if a graph is not connected, its complement must be.”  There are two ways to strengthen this statement:
+- Unfolding the definition of connectedness, this really means “If there are  two vertices with * no path* between them in a graph, then the graph’s complement is connected.”  It ends up being useful to weaken the hypothesis (and therefore  strengthen the statement) to  “If there are two vertices with * no path of length 1 or 2* between them in a graph, then the graph’s is connected.”  
+- Alternately, it could also be useful to strengthen the target (and therefore strengthen) to “If a graph is not connected, its complement is connected *and has diameter at most 3*.”
+
+*Details* are in [the pdf of the proof][15], [a point-and-click proof][16], [analysis of the proof][17], and [ideas for automating the proof.][18]
+
+
+
+
 # The Complement
 
 _Proofs where a conflict-inspired lemma is easily derived, but not helpful to proof discovery._
@@ -85,13 +96,13 @@ _Proofs where a conflict-inspired lemma is easily derived, but not helpful to pr
 - It’s always the car closest to the next car that works.
 But I don’t think that disproving any of these conjectures help aid proof discovery.  So, these are some examples where there is not much to learn from failure (disproving a false, stronger statement).
 
-*Details* are in [the full pdf][15].
+*Details* are in [the full pdf][19].
 
 ### Prove an r-regular and bipartite graph does not have a bridge
 
 *High-level:* I tried going by contrapositive: regular + has bridge implies not bipartite.  In the process, I realized I ended up with a graph where I plugged in an even value for the “r” in the regular graph with a bridge, and it *didn’t work*, so I realized from the conflict that *r is odd*.   It then immediately followed that in a n-vertex subgraph formed by taking the biggest connected component after removing the bridge, *n is even*.  But, neither of these facts end up being helpful in the final proof.
 
-*Details* are in [the full pdf][16].
+*Details* are in [the full pdf][20].
 
 [1]:	bipartition-points-on-plane.pdf
 [2]:	dice-proof.pdf
@@ -107,5 +118,9 @@ But I don’t think that disproving any of these conjectures help aid proof disc
 [12]:	semigroup-bbbc.pdf
 [13]:	regular-bipartite-bridge.pdf
 [14]:	degree-sequences.pdf
-[15]:	../forward-from-target/n-cars.pdf
-[16]:	regular-bipartite-bridge.pdf
+[15]:	graph-or-complement-1-proof.pdf
+[16]:	graph-or-complement-2-pointandclick.pdf
+[17]:	graph-or-complement-3-analysis.pdf
+[18]:	graph-or-complement-4-automation.pdf
+[19]:	../forward-from-target/n-cars.pdf
+[20]:	regular-bipartite-bridge.pdf
