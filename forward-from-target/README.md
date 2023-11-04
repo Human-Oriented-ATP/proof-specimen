@@ -67,6 +67,11 @@ There are n cars on a circular track.  Adding up the gas in their tanks, there�
 
 *Details* are in [the full pdf][7].
 
+### Let H be a subgroup of G.  Show the size of a coset of H is the same as the 
+*High-level:*  We want to show (the size of a coset of H) = (the size of H).  Here, it’s helpful to reason forward from the target and say that if that conclusion held, then it is _necessary_ (and as it turns out, equivalent) that the coset must contain no “duplicate” elements.  So, we now look at if there was a “duplicate” element,  we derive a contradiction.
+
+*Details* are in [the full pdf][8].
+
 [1]:	max-ideals.pdf
 [2]:	max-ideals-analysis.pdf
 [3]:	19-from-4s-and-7s.pdf
@@ -74,3 +79,4 @@ There are n cars on a circular track.  Adding up the gas in their tanks, there�
 [5]:	non-abelian-groups.pdf
 [6]:	aabb.pdf
 [7]:	diverging-tuple.pdf
+[8]:	cosets-same-size.pdf
