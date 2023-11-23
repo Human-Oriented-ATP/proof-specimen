@@ -46,7 +46,7 @@ _Proofs where oscillating between counterexamples, lemmas-learnt-from-failure, a
 
 *High-level:* The prover proves a specialization of the lemma, proving that a graph in which every vertex has degree at least 2 must contain a cycle. The adversary prompts the prover to explain why the proof fails when a particular hypothesis is removed (that is, why the generalization fails).  This adversarial prompting makes the prover realize that leaves are crucial to the proof, and then formulates a relevant lemma about them.
 
-*Details* are in [the full pdf][11].
+*Details* are in [the full pdf][11] and in the [analysis][12] of how this proof uses strengthening.
 
 ### Semigroup where BBBC = BBCB
 
@@ -55,30 +55,30 @@ _Proofs where oscillating between counterexamples, lemmas-learnt-from-failure, a
 - Trying to move a “C” to the front of a term and failing made me realize there was no way to bring a “C” to the front if there is an “A” anywhere before it.
 - Not being able to move a “C” to the front of the term, when that was my goal, made me realize that actually I needed to modify my goal to a stronger one where the “C” was destroyed entirely.
 
-*Details* are in [the full pdf][12].
+*Details* are in [the full pdf][13].
 
 
 ### Prove an r-regular and bipartite graph does not have a bridge
 
 *High-level:* I try to prove the stronger, false statement: that any regular graph does not have a bridge.  But, we find a counterexample, and find there are regular graphs with bridges.  And so now we’re driven to characterize such graphs, and we find all such graphs have a particular degree sequence, and that degree sequence is incompatible with bipartiteness.  And so, we end up proving the contrapositive: regular + bridge =\> not bipartite.
 
-*Details* are in [the full pdf][13].
+*Details* are in [the full pdf][14].
 
 
 ### Is there a graph with degree sequence 1,3,3,3?
 
 *High-level:* You can prove this doesn’t work either (1) by trying a forced construction of an example, failing to construct such an example, and generalizing the failure to the fact that there is a vertex of degree 1 and more than one vertex of maximal degree, or (2) Proving the stronger statement “there is no n-vertex graph with degree sequence 1, n-1, n-1….”.
 
-*Details* are in [the full pdf][14].
+*Details* are in [the full pdf][15].
 
 
 ### Either a graph or its complement is connected.
 
 *High-level:* We are trying to prove “if a graph is not connected, its complement must be.”  There are two ways to strengthen this statement:
-- Unfolding the definition of connectedness, this really means “If there are  two vertices with * no path* between them in a graph, then the graph’s complement is connected.”  It ends up being useful to weaken the hypothesis (and therefore  strengthen the statement) to  “If there are two vertices with * no path of length 1 or 2* between them in a graph, then the graph’s is connected.”  
+- Unfolding the definition of connectedness, this really means “If there are  two vertices with * no path* between them in a graph, then the graph’s complement is connected.”  It ends up being useful to weaken the hypothesis (and therefore  strengthen the statement) to  “If there are two vertices with * no path of length 1 or 2* between them in a graph, then the graph’s is connected.”
 - Alternately, it could also be useful to strengthen the target (and therefore strengthen) to “If a graph is not connected, its complement is connected *and has diameter at most 3*.”
 
-*Details* are in [the pdf of the proof][15], [a point-and-click proof][16], [analysis of the proof][17], and [ideas for automating the proof.][18]
+*Details* are in [the pdf of the proof][16], [a point-and-click proof][17], [analysis of the proof][18], and [ideas for automating the proof.][19]
 
 
 
@@ -96,13 +96,13 @@ _Proofs where a conflict-inspired lemma is easily derived, but not helpful to pr
 - It’s always the car closest to the next car that works.
 But I don’t think that disproving any of these conjectures help aid proof discovery.  So, these are some examples where there is not much to learn from failure (disproving a false, stronger statement).
 
-*Details* are in [the full pdf][19].
+*Details* are in [the full pdf][20].
 
 ### Prove an r-regular and bipartite graph does not have a bridge
 
 *High-level:* I tried going by contrapositive: regular + has bridge implies not bipartite.  In the process, I realized I ended up with a graph where I plugged in an even value for the “r” in the regular graph with a bridge, and it *didn’t work*, so I realized from the conflict that *r is odd*.   It then immediately followed that in a n-vertex subgraph formed by taking the biggest connected component after removing the bridge, *n is even*.  But, neither of these facts end up being helpful in the final proof.
 
-*Details* are in [the full pdf][20].
+*Details* are in [the full pdf][21].
 
 [1]:	bipartition-points-on-plane.pdf
 [2]:	dice-proof.pdf
@@ -115,12 +115,13 @@ But I don’t think that disproving any of these conjectures help aid proof disc
 [9]:	chess-puzzle-analysis.pdf
 [10]:	no-cut-vertex-every-two-on-cycle.pdf
 [11]:	tree-implies-n-1.pdf
-[12]:	semigroup-bbbc.pdf
-[13]:	regular-bipartite-bridge.pdf
-[14]:	degree-sequences.pdf
-[15]:	graph-or-complement-1-proof.pdf
-[16]:	graph-or-complement-2-pointandclick.pdf
-[17]:	graph-or-complement-3-analysis.pdf
-[18]:	graph-or-complement-4-automation.pdf
-[19]:	../forward-from-target/n-cars.pdf
-[20]:	regular-bipartite-bridge.pdf
+[12]:	tree-implies-n-1-analysis.pdf
+[13]:	semigroup-bbbc.pdf
+[14]:	regular-bipartite-bridge.pdf
+[15]:	degree-sequences.pdf
+[16]:	graph-or-complement-1-proof.pdf
+[17]:	graph-or-complement-2-pointandclick.pdf
+[18]:	graph-or-complement-3-analysis.pdf
+[19]:	graph-or-complement-4-automation.pdf
+[20]:	../forward-from-target/n-cars.pdf
+[21]:	regular-bipartite-bridge.pdf
