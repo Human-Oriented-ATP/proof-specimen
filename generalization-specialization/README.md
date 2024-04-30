@@ -26,6 +26,15 @@ _Proofs where applying generalization & specialization is genuinely helpful._
 
 *Details* are in [the full pdf][3].
 
+### Can you generate all Mobius transformations by inverses and translations?
+
+*High-level:* So, we want to compose  inverses and translations to create a scaling map.  And to find Mobius transformation that scales by an arbitrary $a$, we want a map that sends sends 0 to 0, 1 to a, and infinity to infinity.
+- In this process, it’s helpful to *generalize* by dropping one of the requirements, and instead just find a non-trivial map that fixes 0 and infinity.
+- It’s also helpful to *generalize* the resulting function we get (which fixes 1) to a function that sends 1 to -b^2 for a particular b.
+
+*Details* are in [the full pdf][4].
+
 [1]:	https://arxiv.org/abs/math/9506215
 [2]:	../conflict-driven/tree-implies-n-1.pdf
 [3]:	exponential-equals-17.pdf
+[4]:	mobius.pdf
