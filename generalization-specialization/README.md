@@ -34,7 +34,14 @@ _Proofs where applying generalization & specialization is genuinely helpful._
 
 *Details* are in [the full pdf][4].
 
+### An inequality in probability
+
+*High-level:* A probability inequality can be more generally stated (and more easily proved) after we reduce reliance on constants (e.g. create a new random variable Y that takes on two existing values with equal probability) and add symmetry (shift Y to be a symmetric random variable).
+
+*Details* are in [the full pdf][5].
+
 [1]:	https://arxiv.org/abs/math/9506215
 [2]:	../conflict-driven/tree-implies-n-1.pdf
 [3]:	exponential-equals-17.pdf
 [4]:	mobius.pdf
+[5]:	probability-ineq.pdf
